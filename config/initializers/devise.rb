@@ -12,7 +12,7 @@ Devise.setup do |config|
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class
   # with default "from" parameter.
-  config.mailer_sender = 'csc667.poker@gmail.com'
+  config.mailer_sender = ENV['FROM_EMAIL']
 
 
   # Configure the class responsible to send e-mails.
@@ -149,6 +149,7 @@ Devise.setup do |config|
   # one (and only one) @ exists in the given string. This is mainly
   # to give user feedback and not to assert the e-mail validity.
   # config.email_regexp = /\A[^@]+@[^@]+\z/
+  config.email_regexp = /\A[^@]+@gnagy\.info\z/
 
   # ==> Configuration for :timeoutable
   # The time you want to timeout the user session without activity. After this
@@ -237,7 +238,7 @@ Devise.setup do |config|
   # Add a new OmniAuth provider. Check the wiki for more information on setting
   # up on your models and hooks.
   # config.omniauth :github, 'APP_ID', 'APP_SECRET', scope: 'user,public_repo'
-  config.omniauth :facebook, '845167862269593', 'f3aebad330ddc01e07ffec47d5fd44a6', {:client_options => { :ssl => { :ca_file => "#{Rails.root}/config/ca-bundle.crt" } } }
+  # config.omniauth :facebook, '845167862269593', 'f3aebad330ddc01e07ffec47d5fd44a6', {:client_options => { :ssl => { :ca_file => "#{Rails.root}/config/ca-bundle.crt" } } }
 
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or

@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.4'
+gem 'rails', '~> 4.2'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -11,6 +11,12 @@ gem 'uglifier', '>= 1.3.0'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
+
+# gem 'bootstrap-sass', '~> 3.3'
+# gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
+# gem 'rails-ujs', '~> 0.1.0'
+# gem 'bower-rails'
+# gem 'angularjs-rails'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -34,9 +40,9 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem 'coffee-script-source', '1.8.0'
+gem 'coffee-script-source', '~> 1.8'
 
-gem 'mongoid', '~> 5.0.0'
+gem 'mongoid', '~> 5.0'
 
 gem 'angular-rails-templates'
 gem 'responders', '~> 2.0'

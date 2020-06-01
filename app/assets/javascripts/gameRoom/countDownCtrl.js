@@ -3,7 +3,7 @@ pokerApp.controller('countDownController', ['$scope', function ($scope) {
 	$scope.type = 'warning';
 
 	frequency = 10;
-	increment = 100/1500;
+	increment = 100/6000;
 
 	$scope.start = function (){
 		$scope.dynamic = 100;

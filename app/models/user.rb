@@ -7,7 +7,7 @@ class User
   validates_confirmation_of :password
   validates :email, :email => true
 
-  field :balance,             type: Integer, default: 5000
+  field :balance,             type: Integer, default: 50000
   
   field :provider,            type: String
   field :uid,                 type: String
@@ -17,7 +17,7 @@ class User
 
   # Include default devise modules. Others available are:
   # :lockable, :timeoutable, :confirmable, :omniauthable,
-devise  :database_authenticatable, :registerable, :recoverable,
+  devise  :database_authenticatable, :registerable, :recoverable,
         :rememberable, :trackable, :validatable, :omniauthable, :omniauth_providers => [:facebook]
         
 

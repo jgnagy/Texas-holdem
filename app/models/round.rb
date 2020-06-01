@@ -240,7 +240,7 @@ class Round
 
     hand = self.hands.where(current: true).first
     if hand != nil
-      delay(run_at: 15.seconds.from_now).move_if_inactive(hand.id, hand.updated_at)
+      delay(run_at: 60.seconds.from_now).move_if_inactive(hand.id, hand.updated_at)
     end
   end
 
