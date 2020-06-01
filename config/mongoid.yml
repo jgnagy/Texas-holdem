@@ -1,7 +1,9 @@
 production:
   clients:
     default:
-      uri: mongodb://db:27017/pokerdb
+      database: pokerdb
+      hosts:
+      - db:27017
 development:
   # Configure available database clients. (required)
   clients:
